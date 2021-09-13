@@ -21,6 +21,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth; /*THIS IS GOOD TO ADD SCROLLING EFFECT TO A SECTION OF THE WEBSITE*/
 }
 
 body {
