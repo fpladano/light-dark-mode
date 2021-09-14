@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
+
 :root {
   --primary-color: rgb(255, 92, 92);
   --primary-variant: #ff2d2d;
@@ -27,6 +29,7 @@ html {
 body {
   margin: 0;
   color: var(--on-background);
+  font-family: Montserrat, sans-serif;
   background-color: var(--background);
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%2329b1c0' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
@@ -40,11 +43,13 @@ section {
 }
 
 h1 {
+  font-family: Raleway, sans-serif;
   font-size: 100px;
   margin-bottom: 0;
 }
 
 h2 {
+  color: var(--on-background-alt);
   font-size: 32px;
   font-weight: normal;
 }
@@ -53,6 +58,7 @@ h2 {
 nav {
   z-index: 10;
   position: fixed;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   letter-spacing: 3px;
   padding: 25px;
@@ -184,7 +190,7 @@ p {
   z-index: 100;
   position: fixed;
   right: 25px;
-  top: 30px;
+  top: 22px;
 }
 
 .theme-switch-wrapper span {
