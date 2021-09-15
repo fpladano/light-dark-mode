@@ -40,6 +40,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 2rem;
 }
 
 h1 {
@@ -279,11 +280,6 @@ input:checked + .slider::before {
     justify-content: flex-end;
   }
 
-  /* Section */
-  section {
-    margin: 0 2rem;
-  }
-
   /* About */
   .about-container {
     flex-direction: column;
@@ -332,5 +328,9 @@ input:checked + .slider::before {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .fab {
+    font-size: clamp(3.5rem, 12vw + 1rem, 6.3rem);
   }
 }
