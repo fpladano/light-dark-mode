@@ -46,6 +46,7 @@ h1 {
   font-family: Raleway, sans-serif;
   font-size: 100px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 h2 {
@@ -101,14 +102,16 @@ a:focus {
   padding: 10px 20px;
   margin-right: 25px;
   margin-left: 25px;
-  width: auto;
+  width: 100%;
   background: var(--background);
   box-shadow: var(--box-shadow);
 }
 
 img {
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 /* Projects Section */
@@ -261,4 +264,73 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+@media (max-width: 890px) {
+  /* Fonts */
+  h1 {
+    font-size: clamp(3.5rem, 12vw + 1rem, 6.3rem);
+  }
+  /* Navbar */
+  .nav-menu {
+    display: none;
+  }
+  nav {
+    justify-content: flex-end;
+  }
+
+  /* Section */
+  section {
+    margin: 0 2rem;
+  }
+
+  /* About */
+  .about-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  /* Projects */
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+
+  .text-box {
+    width: auto;
+  }
+
+  /* Contact */
+  .social-icons .fab {
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
